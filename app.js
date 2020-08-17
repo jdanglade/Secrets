@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(session({
-  secret: "The entire world is watching.",
+  secret: process.env.ANOTHER_SECRET,
   resave: false,
   saveUninitialized: false,
 }));
