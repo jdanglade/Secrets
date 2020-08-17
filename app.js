@@ -122,7 +122,7 @@ app.get("/secrets", function(req, res) {
       }
     });
   } else {
-    res.redirect("/register");
+    res.redirect("/login");
   }
 });
 
